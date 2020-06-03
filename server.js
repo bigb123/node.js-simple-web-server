@@ -6,7 +6,7 @@ var server = http.createServer(function (req, res) {
 
     res.writeHead(200, { 'Content-Type': 'text/html' });
     res.write('<html><body>');
-    res.write('<p>Nodejs is hosting this page</p><br>');
+    res.write('<p>Nodejs is hosting this page</p>');
     res.write('<p>Message from Lambda: ' + process.env.JSON_MSG + '</p>');
     res.write('</body></html>');
     res.end();
